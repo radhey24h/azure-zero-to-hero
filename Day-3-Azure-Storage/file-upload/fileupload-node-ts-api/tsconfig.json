@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",  // Corrected for Node.js compatibility
+      "moduleResolution": "node",  // Corrected for Node.js resolution
+      "target": "ES2023",  // Assuming you want the latest ECMAScript features
+      "sourceMap": false,  // Disables source maps (optional, adjust as needed)
+      "outDir": "dist",  // Output directory for compiled JavaScript files
+      "strict": true  // Enables strict type checking
+    },
+    "include": [
+      "src/**/*.ts"  // Includes all TypeScript files in the src directory
+    ],
+    "exclude": [
+      "node_modules"  // Excludes the node_modules directory
+    ]
+  }
