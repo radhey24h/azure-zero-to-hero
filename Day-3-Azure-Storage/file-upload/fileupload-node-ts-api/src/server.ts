@@ -1,10 +1,11 @@
-import http from 'http';
-import express from 'express';
+import * as http from 'http';
+import express, { Request, Response, NextFunction } from 'express';
 import './config/logging';
 import { loggingHandler } from './middleware/loggingHandler';
 import { corsHandler } from './middleware/corsHandler';
 import { routeNotFound } from './middleware/routeNotFound';
-import { configuration } from './config/configuration';
+import { config } from './config/config'; // Ensure this is correct
+import logging from './config/logging'; // Assuming you have a logging module
 
 export const app = express();
 export let httpServer: ReturnType<typeof http.createServer>;
@@ -14,10 +15,8 @@ export const Main = async () => {
     logging.info('Starting server...');
     logging.info('........................');
 
-    
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json());
-
 
     logging.info('........................');
     logging.info('logging and configuring server...');
@@ -28,7 +27,7 @@ export const Main = async () => {
     logging.log('----------------------------------------');
     logging.log('Define Controller Routing');
     logging.log('----------------------------------------');
-    app.get('/api/healthcheck', (req, res, next) => {
+    app.get('/api/healthcheck', (req: Request, res: Response, next: NextFunction) => {
         return res.status(200).json({ hello: 'world!' });
     });
 
@@ -41,9 +40,9 @@ export const Main = async () => {
     logging.log('Starting Server');
     logging.log('----------------------------------------');
     httpServer = http.createServer(app);
-    httpServer.listen(configuration.server.port, () => {
+    httpServer.listen(config.server.port, () => {
         logging.log('----------------------------------------');
-        logging.log(`Server started on ${configuration.server.hostname}:${configuration.server.port}`);
+        logging.log(`Server started on ${config.server.hostname}:${config.server.port}`);
         logging.log('----------------------------------------');
     });
 };

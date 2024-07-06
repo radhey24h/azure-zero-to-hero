@@ -1,6 +1,6 @@
-import { configuration } from './configuration.js';
+import { config } from './config.js';
 
-const Environment = configuration.environment;
+const Environment = config.environment;
 
 const colours = {
     reset: '\x1b[0m',

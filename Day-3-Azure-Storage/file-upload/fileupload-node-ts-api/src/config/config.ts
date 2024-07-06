@@ -1,9 +1,9 @@
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 
-//dotenv.config();
+// Load environment variables from the appropriate .env file
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
-export const configuration = {
+export const config = {
   environment: process.env.NODE_ENV === 'local',
   server: {
     hostname: process.env.SERVER_HOSTNAME || 'localhost',
