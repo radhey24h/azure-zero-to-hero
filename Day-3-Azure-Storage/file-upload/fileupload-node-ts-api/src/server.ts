@@ -6,6 +6,7 @@ import { corsHandler } from './middleware/corsHandler';
 import { routeNotFound } from './middleware/routeNotFound';
 import { config } from './config/config'; 
 import logging from './config/logging';
+import { AppRouter } from './router';
 
 export const app = express();
 export let httpServer: ReturnType<typeof http.createServer>;
@@ -27,9 +28,8 @@ export const Main = async () => {
     logging.log('----------------------------------------');
     logging.log('Define Controller Routing');
     logging.log('----------------------------------------');
-    app.get('/api/healthcheck', (req: Request, res: Response, next: NextFunction) => {
-        return res.status(200).json({ hello: 'world!' });
-    });
+    const appRouter = new AppRouter();
+    appRouter.routes(app);
 
     logging.log('----------------------------------------');
     logging.log('Define Routing Error');
