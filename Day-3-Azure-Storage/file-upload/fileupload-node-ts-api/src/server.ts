@@ -4,8 +4,8 @@ import './config/logging';
 import { loggingHandler } from './middleware/loggingHandler';
 import { corsHandler } from './middleware/corsHandler';
 import { routeNotFound } from './middleware/routeNotFound';
-import { config } from './config/config'; // Ensure this is correct
-import logging from './config/logging'; // Assuming you have a logging module
+import { config } from './config/config'; 
+import logging from './config/logging';
 
 export const app = express();
 export let httpServer: ReturnType<typeof http.createServer>;
