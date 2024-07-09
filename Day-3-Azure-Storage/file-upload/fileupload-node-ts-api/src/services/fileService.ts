@@ -40,6 +40,8 @@ export class FileService {
 
     public async uploadFile(req: Request, res: Response, next: NextFunction) {
         try {
+            console.log(req.body);
+            debugger;
             const blobName = req.body.name;
             const content = req.body.content;
             const blockBlobClient = this.containerClient.getBlockBlobClient(blobName);

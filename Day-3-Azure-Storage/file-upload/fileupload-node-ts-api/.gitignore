@@ -10,7 +10,7 @@ dist/
 .env
 
 # IDE and editor files
-.vscode/
+# .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
