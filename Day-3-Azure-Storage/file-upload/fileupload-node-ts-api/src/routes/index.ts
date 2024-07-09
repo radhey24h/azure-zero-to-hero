@@ -1,6 +1,6 @@
 import express from 'express';
-import { ApiRoutes } from './api.routes';
-import { FileRoutes } from './file.routes';
+import { ApiRoutes } from './apiRoutes';
+import { FileRoutes } from './fileRoutes';
 
 export class AppRouter {
     public apiRoute: ApiRoutes = new ApiRoutes();

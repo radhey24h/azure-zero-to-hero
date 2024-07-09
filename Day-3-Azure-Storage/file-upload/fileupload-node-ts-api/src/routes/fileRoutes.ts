@@ -1,5 +1,5 @@
 import express = require('express');
-import { FileController } from '../controller/file.controller';
+import { FileController } from '../controller/fileController';
 
 export class FileRoutes {
 

@@ -1,12 +1,12 @@
 import * as http from 'http';
-import express, { Request, Response, NextFunction } from 'express';
+import express from 'express';
 import './config/logging';
 import { loggingHandler } from './middleware/loggingHandler';
 import { corsHandler } from './middleware/corsHandler';
 import { routeNotFound } from './middleware/routeNotFound';
-import { config } from './config/config'; 
+import { config } from './config/config';
 import logging from './config/logging';
-import { AppRouter } from './router';
+import { AppRouter } from './routes';
 
 export const app = express();
 export let httpServer: ReturnType<typeof http.createServer>;
@@ -35,6 +35,7 @@ export const Main = async () => {
     logging.log('Define Routing Error');
     logging.log('----------------------------------------');
     app.use(routeNotFound);
+
 
     logging.log('----------------------------------------');
     logging.log('Starting Server');

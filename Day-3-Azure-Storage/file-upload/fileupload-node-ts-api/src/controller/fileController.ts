@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import logging from '../config/logging';
-import { FileService } from '../services/file.service';
+import { FileService } from '../services/fileService';
 
 export class FileController {
 
