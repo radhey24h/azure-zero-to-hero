@@ -17,14 +17,10 @@ export class FileService {
             const blobName = req.params.name;
             const blobClient = this.containerClient.getBlobClient(blobName);
             const downloadBlockBlobResponse = await blobClient.download();
-            if (downloadBlockBlobResponse.readableStreamBody) {
-                const data = await this.streamToString(downloadBlockBlobResponse.readableStreamBody);
-                res.status(200).send(data);
-            } else {
-                res.status(404).send('File not found.');
-            }
+            const data = await this.streamToString(downloadBlockBlobResponse.readableStreamBody!);
+            res.status(200).send(data);
         } catch (error) {
-            logging.error('FileService.getFile', error);
+            logging.error('getFile', error);
             next(error);
         }
     }
@@ -37,7 +33,7 @@ export class FileService {
             }
             res.status(200).json(blobs);
         } catch (error) {
-            logging.error('FileService.getFiles', error);
+            logging.error('getFiles', error);
             next(error);
         }
     }
@@ -50,7 +46,7 @@ export class FileService {
             await blockBlobClient.upload(content, Buffer.byteLength(content));
             res.status(201).send(`File uploaded: ${blobName}`);
         } catch (error) {
-            logging.error('FileService.uploadFile', error);
+            logging.error('uploadFile', error);
             next(error);
         }
     }
@@ -62,7 +58,7 @@ export class FileService {
             await blockBlobClient.delete();
             res.status(200).send(`File deleted: ${blobName}`);
         } catch (error) {
-            logging.error('FileService.deleteFile', error);
+            logging.error('deleteFile', error);
             next(error);
         }
     }

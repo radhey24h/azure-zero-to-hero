@@ -4,33 +4,25 @@ import { FileService } from '../services/fileService';
 
 export class FileController {
 
+    private fileService: FileService = new FileService();
+
     public getFile(req: Request, res: Response, next: NextFunction) {
-
-        logging.info('getresults:: results');
-
-        let fileService = new FileService();
-        fileService.getFile(req, res, next);
+        logging.info('getFile :: Fetching file');
+        this.fileService.getFile(req, res, next);
     }
+
     public getFiles(req: Request, res: Response, next: NextFunction) {
-
-        logging.info('getresults :: results');
-
-        let fileService = new FileService();
-        fileService.getFiles(req, res, next);
+        logging.info('getFiles :: Fetching all files');
+        this.fileService.getFiles(req, res, next);
     }
-   
+
     public uploadFile(req: Request, res: Response, next: NextFunction) {
-
-        logging.info('updateresults :: results');
-
-        let fileService = new FileService();
-        fileService.uploadFile(req, res, next);
+        logging.info('uploadFile :: Uploading file');
+        this.fileService.uploadFile(req, res, next);
     }
+
     public deleteFile(req: Request, res: Response, next: NextFunction) {
-
-        logging.info('deleteresults :: results');
-
-        let fileService = new FileService();
-        fileService.deleteFile(req, res, next);
+        logging.info('deleteFile :: Deleting file');
+        this.fileService.deleteFile(req, res, next);
     }
 }
