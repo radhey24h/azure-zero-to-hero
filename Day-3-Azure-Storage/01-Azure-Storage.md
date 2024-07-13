@@ -98,6 +98,16 @@ The Cool tier is designed for data that is infrequently accessed and stored for 
   - Higher access costs compared to the Hot tier
   - Minimum retention period of 30 days
 
+
+## Cold Tier
+The Cold tier is designed for data that is infrequently accessed and stored for at least 90 days.
+
+- **Use case**: Data that is accessed less frequently but needs to be retained for a longer period, such as backups, older documents, and media files that are not frequently viewed.
+- **Characteristics**:
+  - Lower storage costs compared to the Hot tier
+  - Higher access costs compared to the Hot tier
+  - Minimum retention period of 90 days
+
 ## Archive Tier
 The Archive tier is designed for data that is rarely accessed and stored for at least 180 days. It offers the lowest storage costs but has higher latency and costs for accessing the data.
 

@@ -123,7 +123,7 @@ Virtualization allows multiple virtual machines to run on a single physical serv
 ### 3. Verify Connection
 1. Once connected, you should see the Windows desktop of your VM, indicating that you are now logged in.
 
-## Initialize and Format the New Disk
+## Initialize and Format the New Disk to enable additional Disk
 
 ### For Linux VM
 1. Connect to the VM using SSH.

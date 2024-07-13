@@ -159,16 +159,18 @@ Cloud computing involves the delivery of computing services (servers, storage, d
 # Other Cloud Computing terminology
 
 ## Scalability
-Scalability in cloud computing means the ability to easily increase or decrease resources like storage, computing power, or bandwidth as needed. Imagine if your favorite website suddenly had a lot more visitors—scalability ensures it can handle that extra traffic smoothly by adding more resources quickly, without any downtime or slow performance. It's like being able to expand a restaurant's seating instantly when more customers arrive.
+Scalability in cloud computing means the ability to easily increase or decrease resources like storage, computing power, or bandwidth as needed. 
+**Use-Case:** Imagine if your favorite website suddenly had a lot more visitors—scalability ensures it can handle that extra traffic smoothly by adding more resources quickly, without any downtime or slow performance. It's like being able to expand a restaurant's seating instantly when more customers arrive.
 
 ## Elasticity
 Elasticity is the capability of a system to automatically provision and release resources as needed, based on demand. It goes hand in hand with scalability but focuses on the automatic nature of resource allocation, ensuring optimal performance and cost efficiency.
 
 ## Agility
-Agility in cloud computing means being able to make changes quickly and easily. It's like being able to rearrange your furniture instantly to make room for guests. In the cloud, this means deploying new applications, scaling resources, or making updates rapidly, allowing businesses to respond to market demands and opportunities more effectively.
+Agility in cloud computing means being able to make changes quickly and easily. 
+**Use-Case:** It's like being able to rearrange your furniture instantly to make room for guests. In the cloud, this means deploying new applications, scaling resources, or making updates rapidly, allowing businesses to respond to market demands and opportunities more effectively.
 
 ## High Availability
-High availability in cloud computing means that a system or service is always up and running, even if something goes wrong. Imagine a store that never closes, even if one entrance is blocked; customers can still get in through another door. In the cloud, this means that your data and applications remain accessible, with backup systems ready to take over if there's an issue.
+High availability in cloud computing means that a system or service is always up and running, even if something goes wrong. **Use-Case:** Imagine a store that never closes, even if one entrance is blocked; customers can still get in through another door. In the cloud, this means that your data and applications remain accessible, with backup systems ready to take over if there's an issue.
 
 ## Fault Tolerance
 Fault tolerance in cloud computing means that a system can keep working even if some parts fail. Think of it like a car with extra tires that automatically replace a flat tire while you’re driving, so you don’t have to stop. This ensures that services remain available and reliable, even when issues occur.
