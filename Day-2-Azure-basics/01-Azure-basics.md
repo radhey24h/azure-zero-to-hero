@@ -122,6 +122,44 @@ Inside a Subscription, you can create one or more Resource Groups. A Resource Gr
 ### Azure Resources
 Any manageable item in Azure, such as virtual machines, databases, or web apps.
 
+
+## Manage subscription
+### Subscription 
+subscription allows us to use a service based on a fee. It alllow us to use the service on an on-demand basis, and they ask for payment monthly basis and also they only ask what-ever service we have used.
+After creating an account on azure portal we get 
+1) Free trail and 
+2) Azure Active directory
+
+Without subscription we can't create any resource.
+
+There are different types of subscriptions.
+1) Free trail
+2) visual studio yearly subscription: where we get visual studio free credis every month
+3) Pay as you go :
+
+## Subscription permission level
+When we create an azure account, we get three level of permission in azure.
+1) **Account Administratior**: When we create an azure account we get 1 Account Administratior Per account.
+It manage all the subscription in an account
+It create new subscription
+it can cencel subscription
+He can change the billing for a subscription
+He can change the service administrator.
+
+2) **Service administrator**: When we create an subscription, we can get 1 Service Administratior Per subscription.
+Manage services in azure portal
+Assign users to the co-administartor role.
+
+2) **Co-administartor**: When we create an subscription service administartor can create 200 co-administartor rolethe access will be same like service administrator but he can't change the role of Service administrator.
+
+## Management group
+when we create multiple subscription we use management group to manage multiple subscrption.
+We can go Management group and we can add multiple suscription for multiple company.
+
+Now let us say you have a product company and it is growing very well after a certain duration you aquire your competetior and he is also running an azure account so we can transfer that subscription one account.
+**Benifits of Management group**
+using Management group we can manage company(Management group) level cost and azure policy(like change wallpaper or change password).
+
 ### Azure Resource Manager (ARM)
 - **Definition**: Management layer for deploying and managing Azure resources.
 - **Benefits**: Simplifies resource deployment, ensures consistent management.
