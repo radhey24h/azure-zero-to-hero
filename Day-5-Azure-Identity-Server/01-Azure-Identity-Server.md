@@ -122,13 +122,6 @@ In Azure we can specify a scope at four levels.
 4) Resource
 Scopes are structured in a parent-child relationship
 
-# Lab - 1
-## Create an user and provide a role on different level
-1) **Step 1**: Create an user(tom) from azure active directory
-2) **Step 2**: Create a resource group
-3) **Step 3**: Go on resource group -> Access control(IAM)->Add> Add role Assignment->Role(Contributor)->Assign Access to(User, group, or service principle)->Select(created username tom)
-4) **Step 4**:We can create another resource group and it will be not accessible to (tom)
-
 We can also create a custom role.
 
 ## Custom Roles
@@ -140,14 +133,6 @@ To create custom roles we need :
 - Permission to create custom role, such as Owner or User Access Administrator
 
 **use case** - customized laptop, customised clothe
-
-# Lab - 2
-## Create a custom Role
-1) **Step 1**: Go to Subscription-> Roles (here all built-in roles are available)->Add->Add Custom Role
-2) **Step 2**: Add Custom Role->Basics->Custom Role Name->Start from Scratch->Next
-3) **Step 3**: Add permission->Compute(Microsoft Compute)->go to virtual machine section(Start Virtual Permission)
-4) **Step 4**: Add permission->Compute(Microsoft Storage)->go to Storage section(Delete Storage Account)
-5) **Step 5**: Add scope (Management Group, Subscription level, resource group or resource)
 
 ## Create a custom Role using PowerShell
 We have to write the below commands to create the new custom role
@@ -257,12 +242,10 @@ Your IT team doesn’t have to worry about manually updating the system, as it a
 
 
 ## Azure AD Password hash technique.
-## Lab 3
-**Step 1**
+
 
 ## Azure AD Password Writeback technique.
-## Lab 3
-**Step 1**
+
 
 ## Multifactor Authentication
 Multifactor Authentication is a process where a user is prompted during the sign-in process for an additional form of identification, such as to enter a code on their cell phone or to provide a fingerprint scan.
@@ -275,31 +258,14 @@ Azure multi-factor authentication works by requiring two or more of the followin
 
 **Use Case**: Like security in our office, when we enter in our office there is main gate security, after one level of scan we use another level of scan to enter in project development area.
 
-## Lab 4a
-**Step 1** Azure Active Directory-> Users-> Create An User -> Select Multifactor Authentication
-**Step 2** Select User -> Enable
-**Step 3** now open incognito and login with new user
-
-## Lab 4b Advance Settings
-**Step 1** Azure Active Directory-> Users-> Create An User -> Select Multifactor Authentication
-**Step 2** Select User -> Enable
-**Step 3** now open incognito and login with new user
-
-
-
 ## Custom Domain
 We can add custom domain name in 
-## Lab 
-**Step 1** Add new custom domain-> create txt type record and map with domain provider in DNS section
-
 
 ## Azure AD join
 We can join and register devices with azure AD join, this is good when employee bring their own devices.
 We can configure azure AD registered device with WINDOWS 10, IOS, Android and MacOS (Except Windows Server).
 
 **Enterprise state roaming** - This feature is only available with premium tier, using this feature user can securely synchronize their user settings and application setting data to the cloud.
-## Lab 
-**Step 1** Add 
 
 ## Azure AD dynamic groups
 
@@ -337,25 +303,9 @@ With Azure AD SSPR, remote employees can reset their passwords themselves throug
 
 By enabling SSPR, organizations can enhance their security posture while providing users with a more convenient way to manage their credentials.
 
-## Lab SSPR
-**Step 1**: Prerequisite
-1) MFA should be enabled
-2) Azure AD Premium licence should be active as AD level
-3) Azure AD Premium licence should be assigned at user level
-4) User should be member of Azure AD Group
-**Step 2**:Active Directory-> User
-
-
 ## Azure AD Create/Delete bulk Users
-## Lab ->
-**Step 1**: Azure Active directory -> users -> Bulk Operation Create-> Import and edit the file and upload.
-**Step 1**: Azure Active directory -> users -> Bulk Operation Delete-> Import and edit the file and upload.
-
 
 ## Azure AD Conditional Access
-## Lab ->
-**Step 1**: Need to enable Premium P2
-
 
 ## Azure Application Proxy
 

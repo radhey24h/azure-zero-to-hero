@@ -40,51 +40,26 @@ Before knowing cloud computing let us understand what is computer and computing?
 - **Definition**: Traditional model with dedicated desktop computers. 
 When we talk about standalone PC, it is called desktop computing model, desktop computing model was the first cmputing model in IT industry.
 This model is also famous today because we run this model to complete our day to day task.
-- **Benefits**: Personalization, full control over resources.
-- **Drawbacks**: Limited scalability, high maintenance costs and not able to run remotelly it becomes just a device to manage some personal work.
-- **Use Case**: Small offices or personal computing.
+
 
 ### 2. Client-Server Computing Model
 - **Definition**: Clients request services from centralized servers. 
 To avoid the desktop model drawback client server computing model came in picture, So in Client server model multiple client machine was connected to a server and all client can work on a centrlised source.
-- **Benefits**: Centralized management, easier updates.
-- **Drawbacks**: Single point of failure, scalability limitations. 
-  
-  **What all reason is possible for server failure**
-    1. Hardware Failure: Components such as hard drives, power supplies, or memory modules can fail due to wear and tear, overheating, or manufacturing defects.
-    2. Software Issues: Bugs in operating systems, firmware, or applications can lead to crashes or instability, causing the server to fail.
-    3. Network Problems: Issues with routers, switches, or cables can disrupt communication between servers.
-    4. Human Error: Misconfigurations, improper maintenance procedures
-    5. Power Outages: Interruptions in electrical power supply, whether due to grid failures can cause servers to shut down unexpectedly.
-    6. Natural Disasters: Events such as earthquakes, floods, or fires can physically damage server infrastructure, leading to complete or partial failures.
 
-- **Use Case**: Web applications, email servers.
 
 ### 3. Cluster Computing Model
 - **Definition**: Multiple computers work together as a single system. 
 To avoid the drawback of client-server computing moldel Cluster computing model came in picture, So using the Cluster Computing model we can add more then one server in a cluster, so using this we can reduce the down time or any type of failure
-- **Benefits**: High availability, increased computing power.
-- **Drawbacks**: Complexity in management, cost of setup.
-There was a major drawback of this system is its presence is not available in multiple location so in case if your cluster is available in specific area and any natural or un natural disaster will happen it will stop all the process.
-- **Use Case**: Scientific computations, big data processing.
+
 
 ### 4. Grid Computing Model
 - **Definition**: Coordinates resources across multiple domains.
 To avoid the drawback of cluster computing model grid computing model came in piture.
-- **Benefits**: Resource sharing, cost efficiency.
-- **Drawbacks**: Complex scheduling, security concerns.
-The major drawback of this system was its cost.
-### what all type of costs came in piture to manage server?
-- **Copex** Capital expenditure refers to the funds a company spends on acquiring, upgrading, or maintaining physical assets such as buildings, equipment, or infrastructure. These expenditures are typically one-time investments that are expected to generate benefits over a long period. Examples include purchasing servers,  or investing in machinery.
-- **Opex** Operational expenditure, on the other hand, refers to the ongoing costs that a business incurs to maintain its daily operations. These expenses are necessary for running the business and usually recur regularly. Examples include salaries, rent, utilities, maintenance contracts, and consumables.
-- **Use Case**: Research collaborations, large-scale computations.
+
 
 ### 5. Cloud Computing Model
 Now to avoid these major problem of grid computing model, a new concept came from **NIST** 
 The National Institute of Standards and Technology (NIST) provides a framework for understanding and adopting cloud computing, hardwares and softwares. 
-
-So NIST provides a provision if anyone want to rent-out the free space of their server and earn some money they can.
-From here the cloud computing concept came in picture.
 
 ## What is Cloud Computing?
 In simpler terms, imagine cloud is an virtual space where you can store files, run software, and access various services over the internet.

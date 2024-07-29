@@ -42,43 +42,6 @@ Both startups and large companies use Azure to build and run their applications 
 
 ---
 
-## IaaS vs PaaS vs SaaS Models in Azure
-
-### Infrastructure as a Service (IaaS)
-
-#### Definition
-
-IaaS provides virtualized computing resources over the internet. Users rent virtual machines (VMs), storage, and networking, managing operating systems and applications hosted on the infrastructure.
-
-#### Examples
-
-- **Virtual Machines (VMs)**: Renting VMs to run applications and manage operating systems, akin to renting a computer in the cloud.
-- **Azure Blob Storage**: Storing unstructured data like documents, images, and videos, similar to using a digital storage unit.
-
-### Platform as a Service (PaaS)
-
-#### Definition
-
-PaaS provides a platform for developers to build, deploy, and manage applications without managing underlying infrastructure. Developers focus on coding and deploying applications, while Azure manages the rest.
-
-#### Examples
-
-- **Azure App Service**: Hosting web applications and APIs with built-in scaling and load balancing capabilities.
-- **Azure SQL Database**: Managed relational database service, handling backups, patching, and high availability.
-
-### Software as a Service (SaaS)
-
-#### Definition
-
-SaaS delivers software applications over the internet on a subscription basis. Users access applications via a web browser without worrying about installation, maintenance, or infrastructure.
-
-#### Examples
-
-- **Microsoft 365**: Suite of productivity applications like Word, Excel, and Outlook accessible through a web browser.
-- **Salesforce**: CRM software accessed online for managing customer relationships.
-
----
-
 ## Creating an Account with Azure
 
 ### Process
